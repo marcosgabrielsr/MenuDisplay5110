@@ -4,9 +4,7 @@
 ## Descrição:
 Este projeto é uma forma de criar menus rápidos e iterativos com arduino e o display LCD Nokia 5110 48x84. As funcionalidades encontradas aqui, buscam permitir criar a parte visual do menu e também as funcionalidades executadas de acordo com cada opção selecionada.
 
-<div align="center">
-  ![*Exemplo do sistema em funcionamento*](images/example.gif)
-</div>
+![*Exemplo do sistema em funcionamento*](images/example.gif)
 
 **OBS:** A IDE utilizada para desenvolver este projeto é o PlatformIO utilizando o framework Arduino, logo é possível utilizar este código na IDE oficial do Arduino.
 
