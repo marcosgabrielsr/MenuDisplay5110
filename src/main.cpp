@@ -53,7 +53,7 @@ void loop(){
   display.clearDisplay();
 
   //Chamando função que desenha no menu do display
-  menu_show(display, "Menu Teste", buttonL, buttonX, buttonR, options, 6, actions);
+  menuShow(display, "Menu Teste", buttonL, buttonX, buttonR, options, 6, actions);
 
   //Atualizando o display
   display.display();

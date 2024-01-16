@@ -9,4 +9,4 @@
 
 //-- Funções:
 //- Função que desenha no display as opções e a opção selecionada pelo usuário
-void menu_show(Adafruit_PCD8544 &display, char* title, PushButton &buttonL, PushButton &buttonX, PushButton &buttonR, const char options[][MAX_TITLE], const int size, bool (*func)(int, PushButton &));
+void menuShow(Adafruit_PCD8544 &display, char* title, PushButton &buttonL, PushButton &buttonX, PushButton &buttonR, const char options[][MAX_TITLE], const int size, bool (*func)(int, PushButton &));

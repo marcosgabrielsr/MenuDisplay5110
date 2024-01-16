@@ -2,7 +2,7 @@
 #include "config.h"
 
 //Função que cria o título do menu
-void menu_title(Adafruit_PCD8544 &display, char* title){
+void menuTitle(Adafruit_PCD8544 &display, char* title){
     //Desenhando retângulo
     display.drawRect(0, 0, 84, 11, BLACK);
 
@@ -33,7 +33,7 @@ int8_t navegation(PushButton &buttonL, PushButton &buttonR, const int8_t size){
 }
 
 //Função que desenha no display as opções e a opção selecionada pelo usuário
-void menu_show(Adafruit_PCD8544 &display, char* title, PushButton &buttonL, PushButton &buttonX, PushButton &buttonR, const char options[][MAX_TITLE], const int size, bool (*func)(int, PushButton &)){
+void menuShow(Adafruit_PCD8544 &display, char* title, PushButton &buttonL, PushButton &buttonX, PushButton &buttonR, const char options[][MAX_TITLE], const int size, bool (*func)(int, PushButton &)){
     int8_t begin = 0, end = 0, cursor = 0; // Variáveis que guardam o primeiro item a aparecer, último item e opção atual do cursor do usuário
     bool rigth = true;
 
@@ -43,7 +43,7 @@ void menu_show(Adafruit_PCD8544 &display, char* title, PushButton &buttonL, Push
         display.clearDisplay();
 
         //Imprimindo título
-        menu_title(display, title);
+        menuTitle(display, title);
 
         //Configurando display para escrever os itens do menu
         display.setCursor(0, 13);
